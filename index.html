@@ -3,9 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+    <title>iRescue</title>
 </head>
 <body>
-    <div></div>
+    <header>
+        <div>
+            <img src="Img/iRescuelogo1.png" alt="Irescue">
+            <nav>
+                <a>Inicio</a>
+                <a>Nuestros valores</a>
+                <a>Dónde estamos</a>
+                <a id="contactBTN">Contacto</a>
+            </nav>
+            
+        </div>
+    </header>
+    <div id="main-container">
+        <div id="header-banner">
+                <p>Celulares, tablets y Computadoras</p>
+                <h1>servicio técnico especializado</h1>
+                <a href="">Cotiza tu equipo</a>
+        </div>
+        <div id="servicios">
+            <div class="servicios-item">
+                <img src="img/proteger 1.png">
+                <span>Venta de equipos reacondicionados</span>
+            </div>
+            <div class="servicios-item">
+                <img src="img/solucion-de-problemas.png">
+                <span>Asesoramiento técnico para empresas</span>
+            </div>
+            <div class="servicios-item">
+                <img src="img/cronografo 1.png">
+                <span>Reparaciones en el día</span>
+            </div>
+        </div>
+        <div id="soluciones-section">
+            <img src="img/imagen soluciones.png" alt="phoneRepair">
+            <div id="soluciones-texto">
+                <h3>Soluciones confiables y eficientes</h3>
+                <p>Nuestrá misión es proporcionar servicios de reparación de calidad para que vuelvas a disfrutar de tus dispositivos como en el primer día.<br>
+                    Nos esforzamos para ser líderes en el sector de reparación de dispositivos electrónicos, innovando continuamente para ofrecer el mejor servicio para nuestros clientes.</p>
+            </div>
+       
+        </div>
+        <div id="valores-section">
+            <p>Nuestros valores</p>
+            <div id="valores-items">
+                <div class="valor-item">
+                    <img src="img/customer-service.png">
+                    <span>Atención personalizada</span>
+                    <p>Brindamos un trato personalizado para cumplir con sus necesidades.</p>
+                </div>
+                <div class="valor-item">
+                    <img src="img/proteger 1.png">
+                    <span>Garantía de satisfacción</span>
+                    <p>Tenemos 10 años de experiencia en la reparación  de dispositivos.</p>
+                </div>
+                <div class="valor-item">
+                    <img src="img/clasificacion.png">
+                    <span>Experiencia confiable </span>
+                    <p>Tenemos 10 años de experiencia en la reparación  de dispositivos.</p>
+                </div>
+            </div>
+        </div>
+        <div id="ubicacion-section">
+            <ifram></ifram>
+            <!--para agregar como fondo el mapa de google maps-->
+            <div id="ubicacion-text">
+                <h4>
+                    horarios de atención
+                </h4>
+                <p>Lunes a viernes de 8 a 19hs<br>Sábados de 8 a 13hs</p>
+            </div>
+        </div>
+        <div id="contacto-section">
+            <div id="contacto-texto">
+                <span>¡CONTACTANOS!</span>
+                <p>Un asesor se comunicara
+                    a la brevedad </p>
+            </div>
+            <form id="formulario-contacto">
+                <div id="form-item">
+                    <label>Nombre : </label>
+                    <input class="form-input" type="text" >
+                </div>
+                <div id="form-item">
+                    <label>Teléfono : </label>
+                    <input class="form-input" type="text" >
+                </div>
+                <div id="form-item">
+                    <label>Contanos un poco : </label>
+                  <textarea class="form-input"></textarea>
+                </div>
+                <input id="submit-contacto" type="submit" value="Enviar">
+            </form>
+        </div>
+
+    </div>
+    <footer>
+        <div id="footer-info">
+            <p class="footer-label">Contacto</p>
+            <p>irescue@service.com.ar</p>
+            <p>+541123433</p>
+            <p>Av. Cabildo 123, Capital federal</p>
+        </div>
+        <div id="footer-redes">
+            <p class="footer-label">Redes sociales</p>
+            <div id="footer-redes-imgs">
+                <img src="Img/instagram.png">
+                <img src="Img/facebook.png">
+                <img src="Img/whatsapp.png">
+            </div>
+        </div>
+    </footer>
+
+        
+  
 </body>
 </html>
