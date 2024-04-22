@@ -86,6 +86,7 @@ nav > a:hover{
     color: #000;
     font-weight: 500;
     margin-top: 15px;
+    border-radius: 2px;
         
 }
 #cotizacionBtn:hover{
@@ -102,9 +103,7 @@ nav > a:hover{
     margin: 0 auto;
 
 }
-.servicios-item{
-    width: 300px;
-    /* max-width: 360px; */
+.card{
     height: 182px;
     background-color: #fff;
     border: 0.5px solid rgba(0,0,0,0.4);
@@ -113,6 +112,10 @@ nav > a:hover{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+.servicios-item{
+    width: 300px;
+    /* max-width: 360px; */
     margin-top: -50px;
     
 }
@@ -138,12 +141,15 @@ nav > a:hover{
     display: flex;
     justify-content: center ;
     align-items: center;
+    margin-top: 113px;
+    margin-bottom: 65px ;
 }
 #soluciones-section > img{
     width: 443px;
 }
 #soluciones-texto{
     width:584px;
+    margin-left: 46px;
 }
 #soluciones-texto > h3{
     font-size: 30px;
@@ -153,4 +159,114 @@ nav > a:hover{
 #soluciones-texto > p{
     font-size: 20px;
     width: 100%;
+}
+
+/*NUESTROS VALORES*/
+#valores-section{
+    width: 100%;
+    background-color: rgba(53,165,167,0.66);
+    padding: 55px 0px 110px ;
+}
+#valores-section > p{
+    font-size: 30px;
+    margin: 0 auto;
+    color: #fff;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+#valores-items{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.valor-item{
+    width: 250px;
+    height: 325px;
+}
+.valor-item:nth-child(2n){
+    margin: 0px 78.5px;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.valor-item > img{
+    width: 60px;
+}
+
+.valor-item > p{
+    font-size: 15;
+    text-align: center;
+}
+.valor-item > span{
+    font-size: 20px;
+    font-weight: 500;
+    width: 145px;
+    text-align: center;
+}
+
+/*UBICACIÓN*/
+
+#ubicacion-section{
+    width: 100%;
+    position: relative;
+}
+#ubicacion-section > iframe{
+     width: 100%;
+    max-height: 417px; 
+}
+#ubicacion-text{
+    position: absolute ;
+    top: 45px;
+    right: 120px;
+    width: 358px;
+    height: 328px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#ubicacion-text > h4{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+#ubicacion-text > p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*CONTACTO */
+
+#contacto-section{
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#formulario-contacto{
+    background-color: rgba(53, 165, 167, 0.5);
+}
+
+#formulario-contacto{
+    
+}
+
+.form-input{
+    width: 270px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 5px;
+    outline: none;
 }
