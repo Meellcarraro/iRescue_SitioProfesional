@@ -225,9 +225,35 @@
     margin-left: 0px;
     }
 }
+@media (max-width: 700px){
+    #soluciones-texto{
+        width: 70%;
+    }
+    #soluciones-section{
+        margin-top: 50px;
+    }
+}
 
 @media (max-width: 535px){
     footer{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
     }
+    #redes{
+        text-align: center !important;
+    }
+    #header-banner > p{
+
+        font-size:18px;
+      
+    }
+    #header-banner > h1{
+        font-size: 25px;
+        line-height: 1.5;
+        width: 90%;
+        text-align: center;
+    }
+
 }
