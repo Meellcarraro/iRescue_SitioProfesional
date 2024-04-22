@@ -226,11 +226,13 @@ header{
 /*UBICACIÓN*/
 #miniMapa{
     display: none;
+    width: 100%;
 }
 
 #ubicacion-section{
     width: 100%;
     position: relative;
+  
 }
 #ubicacion-section > iframe{
      width: 100%;
