@@ -238,9 +238,10 @@
     footer{
         flex-direction: column-reverse;
         justify-content: center;
-        align-items: flex-start;
-        padding-left: 10%;
+        align-items: center;
+
     }
+ 
     #redes{
         text-align: center !important;
     }
@@ -254,6 +255,10 @@
         line-height: 1.5;
         width: 90%;
         text-align: center;
+    }
+
+    html{
+        overflow: hidden;
     }
 
 }
