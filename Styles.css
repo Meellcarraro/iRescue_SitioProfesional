@@ -18,15 +18,26 @@ header{
     margin: 0 auto;
 
 }
+#burger{
+    display: none    ;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 25px;
+    top: 29px;
+}
+#burger.active{
+    transform: rotate(90deg);
+}
 .logo{
     width: 105px;
 }
-nav{
+#menu{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-nav > a{
+#menu > a{
     display: block;
     font-size: 12px;
     color: #000;
@@ -36,7 +47,7 @@ nav > a{
     cursor: pointer;
 
 }
-nav > a:hover{
+#menu > a:hover{
     font-weight: 500;
     transform: scale(1.05);
 
@@ -44,10 +55,12 @@ nav > a:hover{
 
 #contactBTN{
     font-weight: 600;
-    text-transform: uppercase;
     background-color: #F1BC00;
     padding: 5px 14px;
     border-radius: 50px;
+    width: 80px;
+    text-align: center;
+  
 }
 
 /*HEADER BANNER*/
@@ -211,6 +224,9 @@ nav > a:hover{
 }
 
 /*UBICACIÓN*/
+#miniMapa{
+    display: none;
+}
 
 #ubicacion-section{
     width: 100%;
@@ -223,7 +239,7 @@ nav > a:hover{
 #ubicacion-text{
     position: absolute ;
     top: 45px;
-    right: 120px;
+    right: 200px;
     width: 358px;
     height: 328px;
     background-color: #fff;
@@ -251,22 +267,120 @@ nav > a:hover{
 #contacto-section{
     width: 100%; 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin-top: 43px;
+    margin-bottom: 76px;
+}
+#contacto-texto {
+
+    text-align: center;
+    margin-right: 46px;
+}
+#contacto-texto > span{
+    font-size: 25px;
+    font-weight: 600;
+}
+#contacto-texto > p{
+    font-size: 25px;
+    font-weight: 400;
+    
 }
 
 #formulario-contacto{
     background-color: rgba(53, 165, 167, 0.5);
+     width: 600px;
+    height: 269px; 
+    padding: 72px 96px; 
+    
+   
+}
+#items{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
-#formulario-contacto{
+.form-item{
+    width: 270px;
+    height: 60px;
+}
+.form-item > label{ 
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    width: 100%;
+    display: block;
+    margin-bottom: 6px;
     
 }
 
 .form-input{
-    width: 270px;
-    height: 32px;
+    width: 100%;
     background-color: #fff;
-    border-radius: 5px;
     outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 33px;
+    padding-left: 10px;
+}
+#submit-contacto{
+    display: block;
+    width: 151px;
+    height: 34px;
+    background-color: #35A5A7 ;
+    color: #fff;
+    text-decoration: none;
+    font-size : 16px;
+    font-weight: 600;
+    border: none; 
+    border-radius: 50px ;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+#textareaInput{
+    width: 100%;
+    height: auto;
+    margin-bottom: 43px;
+}
+#textareaInput > textarea{
+    height: 80px;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    align-items: start;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 73px;
+}
+.footer-info{
+    width: 230px;
+}
+.footer-info > p{
+    font-weight: 400;
+}
+.footer-label{
+    font-weight: 600;
+}
+.footer-label:nth-child(2){
+text-align: center !important;
+}
+
+#footer-redes-imgs > img{
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+}
+#footer-redes-imgs > img:nth-child(2){
+    margin: 0px 24px;
 }
