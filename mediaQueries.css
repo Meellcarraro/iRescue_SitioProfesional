@@ -250,11 +250,19 @@
 @media (max-width: 700px){
     #soluciones-texto{
         width: 70%;
+        text-align: center;
     }
     #soluciones-section{
         margin-top: 50px;
     }
 }
+
+/* @media (max-width: 605px){
+    
+    #soluciones-texto > h3{
+        text-align: center;
+    }
+} */
 
 @media (max-width: 535px){
     footer{
@@ -287,7 +295,12 @@
     .valor-item:nth-child(2n){
         margin: 34px 0px; }
 }
+@media (max-width: 481px){
 
+    #soluciones-texto > h3{
+        font-size: 20px;
+    }
+}
 @media (max-width: 460px){
     #formulario-contacto{
         padding: 36px 33px 20px;
