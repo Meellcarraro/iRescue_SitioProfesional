@@ -184,8 +184,7 @@
     #valores-items{
         flex-direction: column;
     }
-    
-    .valor-item:nth-child(2n){
+     .valor-item:nth-child(2n){
        margin: 34px 0px;
     }
     #servicios{
@@ -231,7 +230,14 @@
         width: 100%;
     }
 }
-
+/* @media (max-width: 795px){
+    .valor-item:last-child{
+        margin-top: 20px;
+    }
+    .valor-item:nth-child(2n){
+        margin-right: 0px;
+    }
+} */
 
 @media (max-width: 750px){
     #soluciones-section{
@@ -255,12 +261,12 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-
     }
-
- 
     #redes{
         text-align: center !important;
+    }
+    #footer-info{
+        text-align: center;
     }
     #header-banner > p{
 
@@ -278,4 +284,15 @@
         overflow: hidden;
     }
 
+}
+
+@media (max-width: 520px){
+    .valor-item:nth-child(2n){
+        margin: 34px 0px; }
+}
+
+@media (max-width: 460px){
+    #formulario-contacto{
+        padding: 36px 33px 20px;
+    }
 }
