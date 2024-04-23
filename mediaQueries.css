@@ -197,20 +197,23 @@
     .servicios-item{
         margin: 17px 0px;
     }
-    #contacto-section{
+    /* #contacto-section{
         width: 80%;
         margin: 0 auto 40px;
-    }
+    } */
         
     #formulario-contacto{
-       /* width: 324px;
-       height: 334px; */
-        width: 100%;
+       /* width: 324px;*/
+       height: 366px; 
+        width: 318px;
+        box-sizing: border-box;
+        /* max-width: 100%; */
         padding: 70px 40px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        
     }
     #items{
         flex-direction: column; 
