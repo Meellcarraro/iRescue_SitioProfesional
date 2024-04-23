@@ -246,6 +246,12 @@
     #soluciones-section{
         flex-direction: column;
     }
+    #solucionesMobile{
+        display: block;
+    }
+    #soluciones-texto > h3{
+        display: none;
+    }
   #soluciones-texto{
     margin-left: 0px;
     }

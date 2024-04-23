@@ -166,6 +166,17 @@ header{
     margin-top: 113px;
     margin-bottom: 65px ;
 }
+#solucionesMobile{
+    font-weight: 600;
+    font-size: 20px;
+    width: 252px;
+    text-align: center;
+    margin: 0 auto;
+    display: none;
+    margin-bottom: 27px;
+    border-top: 0.5px solid rgba(0,0,0,0.3);
+    padding-top: 50px;
+}
 #soluciones-section > img{
     width: 443px;
 }
