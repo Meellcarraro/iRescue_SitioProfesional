@@ -6,8 +6,8 @@ burger.addEventListener("click", function(){
     nav.classList.toggle("active");
 });
 
-// function scrollToSection() {
-//     var section = document.getElementById("seccionDestino");
-//     section.scrollIntoView({ behavior: "smooth" });
-//   }
+function scrollToSection() {
+    var section = document.getElementById("seccionDestino");
+    section.scrollIntoView({ behavior: "smooth" });
+  }
   
