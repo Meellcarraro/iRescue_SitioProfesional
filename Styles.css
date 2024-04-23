@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html{ scroll-behavior: smooth;}
 body{
     padding: 0px;
     margin: 0px;
@@ -118,10 +119,16 @@ header{
     margin: 0 auto;
 
 }
+#servicios > h2{
+    display: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+}
 .card{
     height: 182px;
     background-color: #fff;
-    border: 0.5px solid rgba(0,0,0,0.4);
+    border: 0.5px solid rgba(0,0,0,0.3);
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -134,7 +141,7 @@ header{
     margin-top: -50px;
     
 }
-.servicios-item:nth-child(2){
+.servicios-item:nth-child(2n){
     margin-left: 54px;
     margin-right: 54px;
 }
@@ -268,6 +275,67 @@ header{
 }
 
 /*CONTACTO */
+#formulario-contacto{
+    width: 380px;
+    height: 310px;
+    display: flex;
+    background-color : rgba(53,165,167,0.50);
+    border-radius: 3px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 50px 19.98px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#items{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-item{
+    width: 100%;
+}
+.form-item:nth-child(2){
+    margin: 10px 0px;
+}
+
+
+
+.form-item > label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    width: 100%;
+    display: block;
+    
+}
+input,textarea{
+    font-family: "Poppins", sans-serif;
+}
+
+
+#textareaInput > textarea{
+
+    height: 80px;
+    resize: none;
+    padding: 5px;
+}
+
+
+.form-input{
+    display: block;
+    width: 100%;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+    height: 37px;
+    border-radius: 5px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+}
+
 
 #contacto-section{
     width: 100%; 
@@ -280,7 +348,7 @@ header{
 #contacto-texto {
 
     text-align: center;
-    margin-right: 46px;
+    margin-right: 160px;
 }
 #contacto-texto > span{
     font-size: 25px;
@@ -292,49 +360,10 @@ header{
     
 }
 
-#formulario-contacto{
-    background-color: rgba(53, 165, 167, 0.5);
-     width: 600px;
-    height: 269px; 
-    padding: 72px 96px; 
-    
-   
-}
-#items{
-
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-
-.form-item{
-    width: 270px;
-    height: 60px;
-}
-.form-item > label{ 
-    color: #fff;
-    font-weight: 400;
-    font-size: 15px;
-    width: 100%;
-    display: block;
-    margin-bottom: 6px;
-    
-}
-
-.form-input{
-    width: 100%;
-    background-color: #fff;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    height: 33px;
-    padding-left: 10px;
-}
 #submit-contacto{
     display: block;
-    width: 151px;
-    height: 34px;
+    width: 118px;
+    height: 37px;
     background-color: #35A5A7 ;
     color: #fff;
     text-decoration: none;
@@ -344,17 +373,13 @@ header{
     border-radius: 50px ;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
-    margin: 0 auto;
+    margin: 23px auto 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#submit-contacto:hover{
+    opacity: 0.9;
 }
 
-#textareaInput{
-    width: 100%;
-    height: auto;
-    margin-bottom: 43px;
-}
-#textareaInput > textarea{
-    height: 80px;
-}
 
 /*FOOTER*/
 

@@ -13,9 +13,9 @@
             <img id="logo" src="Img/iRescuelogo1.png" alt="Irescue">
             <nav id="menu">
                 <a href="">Inicio</a>
-                <a href="#valores-section">Nuestros valores</a>
-                <a href="#ubicacion-section">Dónde estamos</a>
-                <a id="contactBTN">CONTACTO</a>
+                <a onclick="scrollToSection()" href="#valores-section">Nuestros valores</a>
+                <a onclick="scrollToSection()" href="#ubicacion-section">Dónde estamos</a>
+                <a  onclick="scrollToSection()" id="contactBTN">CONTACTO</a>
             </nav>
            
         
@@ -24,9 +24,10 @@
         <div id="header-banner">
                 <p>Celulares, tablets y Computadoras</p>
                 <h1>servicio técnico especializado</h1>
-                <a id="cotizacionBtn" href="#contacto-section">Cotiza tu equipo</a>
+                <a id="cotizacionBtn" onclick="scrollToSection()"  href="#contacto-section">Cotiza tu equipo</a>
         </div>
         <div id="servicios">
+            <h2>Nuestros servicios</h2>
             <div class="servicios-item card">
                 <img src="Img/proteger 1.png">
                 <span>Venta de equipos reacondicionados</span>
@@ -87,7 +88,7 @@
                     a la brevedad </p>
             </div>
             <form id="formulario-contacto">
-                <div id="items">
+      
                     <div class="form-item">
                         <label>Nombre : </label>
                         <input required class="form-input" type="text" >
@@ -98,8 +99,7 @@
                         <input required class="form-input" type="text" >
                         <!-- <span class="errorMessege">Campo obligatorio</span> -->
                     </div>
-                
-                </div>
+          
                 <div id="textareaInput" class="form-item ">
                     <label>Contanos un poco : </label>
                   <textarea required  width="100" class="form-input"></textarea>
