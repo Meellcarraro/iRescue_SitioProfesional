@@ -13,19 +13,50 @@ function scrollToSection() {
   
 
 /*Validaciones de formulario*/
+let formulario = document.getElementById('formulario-contacto');
 
+formulario.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+  
+    let nombreInput = document.getElementById('nombreInput');
+    let apellidoInput = document.getElementById('apellidoInput');
+    let textareaBox = document.getElementById('textareaBox');
+    let mensajesError =document.getElementsByClassName('errorMessege');
+  
+    let isValid = true;
+  
+   
+    if (nombreInput.value.trim() === '') {
+      isValid = false;
+      mensajesError[0].classList.add("active"); 
+    } else {
+        mensajesError[0].classList.remove("active");
+    }
+  
+    if (apellidoInput.value.trim() === '') {
+      isValid = false;
+      mensajesError[1].classList.add("active"); 
+    } else {
+        mensajesError[1].classList.remove("active");
+    }
+  
+    
 
-let nombreInput = document.getElementById("nombreInput");
+    if (isValid) {
+      
+      window.location.hash = 'formulario-contacto';
+      window.location.reload();
+    //   this.submit();
+    }
 
+    
+  });
 
-
-// Vamos a tener hasta el 17 hasta las 12hs para poder entregar el proyecto grupal
-
-// individual = justificar lo que hice en base a las ideas de nilsen 
-
-
-// tipogragia
-// mapa del sitio 
-// colores 
-
-
+   window.addEventListener('load', function() {
+    if (window.location.hash === '#formulario-contacto') {
+        
+        let mensajeFormulario = document.getElementById('mensajeFormulario');
+        mensajeFormulario.classList.remove("noactive");
+        formulario.classList.add('enviado');
+    }
+});

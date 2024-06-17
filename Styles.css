@@ -309,6 +309,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+ 
 }
 #mensajeFormulario.noactive{
     display: none;
@@ -416,9 +417,11 @@ input,textarea{
     color: red;
     font-weight: 500;
     margin-top: 5px;
+    opacity: 0;
+    
 }
 .errorMessege.active{
-    display: block;
+    opacity: 1;
 }
 
 /*FOOTER*/
