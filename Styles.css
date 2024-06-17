@@ -288,7 +288,7 @@ header{
 /*CONTACTO */
 #formulario-contacto{
     width: 380px;
-    height: 310px;
+    /* height: 310px; */
     display: flex;
     background-color : rgba(53,165,167,0.50);
     border-radius: 3px;
@@ -297,6 +297,24 @@ header{
     align-items: center;
     padding: 36px 50px 19.98px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#formulario-contacto.enviado{
+    display: none;
+}
+
+/*Mensaje de formulario*/
+#mensajeFormulario{
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mensajeFormulario.noactive{
+    display: none;
+}
+#mensajeFormulario > p{
+    text-align: center;
 }
 
 #items{
@@ -324,6 +342,7 @@ header{
 }
 input,textarea{
     font-family: "Poppins", sans-serif;
+
 }
 
 
@@ -338,18 +357,19 @@ input,textarea{
 .form-input{
     display: block;
     width: 100%;
-    padding: 0px;
     border: 0px;
     outline: none;
     height: 37px;
     border-radius: 5px;
-    padding: 0px 5px;
+    padding: 0 15px;
     box-sizing: border-box;
+
 }
 
 
 #contacto-section{
     width: 100%; 
+    height: 440px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -391,6 +411,15 @@ input,textarea{
     opacity: 0.9;
 }
 
+.errorMessege{
+    font-size: 14px;
+    color: red;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.errorMessege.active{
+    display: block;
+}
 
 /*FOOTER*/
 

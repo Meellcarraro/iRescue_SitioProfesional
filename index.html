@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Styles.css">
     <link rel="stylesheet" type="text/css" href="mediaQueries.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <title>iRescue</title>
 </head>
 <body>
@@ -88,23 +89,32 @@
                 <p>Un asesor se comunicara<br>
                     a la brevedad </p>
             </div>
-            <form id="formulario-contacto">
+            <div id="mensajeFormulario" class="noactive">
+                <lord-icon
+                    src="https://cdn.lordicon.com/lomfljuq.json"
+                    trigger="hover"
+                    colors="primary:#16c72e"
+                    style="width:150px;height:150px">
+                </lord-icon>
+                <p><strong>¡Muchas gracias por comunicarte con nosotros!</strong><br>En breve nos estaremos comunicando con vos</p>
+            </div>
+            <form id="formulario-contacto" >
       
                     <div class="form-item">
                         <label>Nombre : </label>
-                        <input required class="form-input" type="text" >
-                        <!-- <span class="errorMessege">Campo obligatorio</span> -->
+                        <input  class="form-input" id="nombreInput" type="text" >
+                        <span class="errorMessege">Campo obligatorio</span>
                     </div>
                     <div class="form-item">
                         <label>Teléfono : </label>
-                        <input required class="form-input" type="text" >
-                        <!-- <span class="errorMessege">Campo obligatorio</span> -->
+                        <input  class="form-input" id="apellidoInput" type="text" >
+                        <span class="errorMessege">Campo obligatorio</span>
                     </div>
           
                 <div id="textareaInput" class="form-item ">
                     <label>Contanos un poco : </label>
-                  <textarea required  width="100" class="form-input"></textarea>
-                  <!-- <span class="errorMessege">Campo obligatorio</span> -->
+                  <textarea  width="100" class="form-input" id="textareaBox"></textarea>
+                  <span class="errorMessege">Campo obligatorio</span>
                 </div>
                 <input id="submit-contacto" type="submit" value="Enviar">
             </form>
